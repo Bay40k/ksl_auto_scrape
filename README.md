@@ -15,6 +15,9 @@ You can schedule `startscrape.py` and `sendemail.py` to run repeatadely (i.e. da
 1. When data is done scraping, run `sendemail.py` to send the data to your email.
 
 ## Example cron job:
+
+Runs scrape every 12 hours, runs sendemail every 12 hours:30 minutes (or 30 minutes after the scrape).
+
 ```bash
 0 */12 * * * python ~/ksl_auto_scraper/startscrape.py
 
